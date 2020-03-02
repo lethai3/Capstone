@@ -1,0 +1,44 @@
+
+WEC-Sim Read Input File ...   
+Elapsed time is 0.273727 seconds.
+
+WEC-Sim Pre-processing ...   
+Elapsed time is 1.977510 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 400
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 200
+	Total Number of Time Steps           = 40000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, H (m)                   = 2
+	Wave Period, T (sec)                 = 7
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: mesh1 *****
+	Body CG                          (m) = [0,0,0]
+	Body Mass                       (kg) = 6.3 
+	Body Diagonal MOI              (kgm2)= [6.3,6.3,6.3]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 0
+
+List of Constraint(s): No Constraint in the system
+
+
+Simulating the WEC device defined in the SimMechanics model RM3_Hydraulic_PTO.slx...   
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m', 262)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m',262,0)">line 262</a>)
+Derivative of state
+'RM3_Hydraulic_PTO.Translational_PTO_Actuation_Force1.Translational_PCC_Prismatic_Joint.Pz.v'
+in block '<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/Translational PTO Actuation Force1/Translational PCC (Prismatic Joint)','error')">RM3_Hydraulic_PTO/Translational PTO Actuation Force1/Translational PCC
+(Prismatic Joint)</a>' at time 208.165 is not finite. The simulation will be stopped.
+There may be a singularity in the solution.  If not, try reducing the step size
+(either by reducing the fixed step size or by tightening the error tolerances)
+} 

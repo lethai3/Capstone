@@ -1,0 +1,9 @@
+
+WEC-Sim Read Input File ...   
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bodyClass/checkinputs', 'C:\Users\remil\Desktop\WEC-Sim\source\objects\bodyClass.m', 385)" style="font-weight:bold">bodyClass/checkinputs</a> (<a href="matlab: opentoline('C:\Users\remil\Desktop\WEC-Sim\source\objects\bodyClass.m',385,0)">line 385</a>)
+The hdf5 file ../hydroData/oswec.h5 does not exist
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m', 81)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m',81,0)">line 81</a>)
+    body(ii).checkinputs;
+} 
+wecSim
