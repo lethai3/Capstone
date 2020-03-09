@@ -4,14 +4,25 @@ simu.simMechanicsFile = 'RM3_Hydraulic_PTO.slx';      %Location of Simulink Mode
 simu.startTime = 0;                     
 simu.rampTime = 200;                       
 simu.endTime=400;
-simu.solver = 'ode4';
-simu.dt = 0.01;                         
+
+%simu.solver = 'ode4'; %default
+%simu.solver = 'ode45'; %default
+%simu.solver = 'ODE15s';
+%simu.solver = 'ode23t';
+simu.solver = 'ode14x';
+
+%simu.dt = 0.01;  
+%simu.dt = 0.001;  
+simu.dt = 0.01/4; %worked with PTO-Sim - Crankshaft DA Cylinder Try 2 - WORKS!
+%simu.dt = 0.01/8; 
 
 %% Wave Information
 % Irregular Waves using PM Spectrum
 waves = waveClass('regular');
 waves.H = 2;
+%waves.T = 7;
 waves.T = 7;
+
 % waves.spectrumType = 'PM';
 % waves.phaseSeed=1;
 
@@ -19,8 +30,10 @@ waves.T = 7;
 % Float
 body(1) = bodyClass('../hydroData/buoy.h5');             
 body(1).geometryFile = '../geometry/buoy.stl';      
-body(1).mass = 6.3;
-body(1).momOfInertia = 6.3*[1 1 1];
+body(1).mass = 500;
+body(1).momOfInertia = 2*500/12*[1 1 1];
+%body(1).mass = 6.3;
+%body(1).momOfInertia = 6.3/12*[1 1 1];
 %body(1).momOfInertia = [20907301 21306090.66 37085481.11];     
 
 % % Spar/Plate
