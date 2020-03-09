@@ -19,7 +19,7 @@ simu.dt = 0.01/4; %worked with PTO-Sim - Crankshaft DA Cylinder Try 2 - WORKS!
 %% Wave Information
 % Irregular Waves using PM Spectrum
 waves = waveClass('regular');
-waves.H = 2;
+waves.H = 1;
 %waves.T = 7;
 waves.T = 7;
 
