@@ -83,7 +83,9 @@ body(1).momOfInertia = 2*500/12*[1 1 1];
 % constraint(3).orientation.z=[1 0 0];
 % constraint(3).orientation.x=[0 0 -1];
 
-PTO Heaving and Surging 3
+%**********************************************************************
+%**********************************************************************
+%PTO Heaving and Surging 3
 simu.simMechanicsFile = 'RM3_Hydraulic_PTO_HeavingSurging3.slx';
 constraint(1) = constraintClass('Fixed'); 
 constraint(1).loc = [-2.5 0 -5];
@@ -93,6 +95,8 @@ constraint(2).orientation.z=[1 0 0];
 constraint(2).orientation.x=[0 0 -1];
 constraint(3) = constraintClass('Constraint');
 constraint(3).loc= [-2.5 0 -5];
+%************************************************************
+%************************************************************
 
 %PTO Heaving and Surging 4 NOT WORKING
 % simu.simMechanicsFile = 'RM3_Hydraulic_PTO_HeavingSurging4.slx';

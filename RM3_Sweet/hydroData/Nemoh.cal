@@ -7,7 +7,7 @@
 1				! Number of bodies
 --- Body 1 -----------------------------------------------------------------------------------------------------------------------
 abs_mesh\mesh\mesh1.dat      ! Name of mesh file
-1024 320			! Number of points and number of panels 	
+896 256			! Number of points and number of panels 	
 6				! Number of degrees of freedom
 1 1. 0.	0. 0. 0. 0.		! Surge
 1 0. 1.	0. 0. 0. 0.		! Sway
@@ -24,7 +24,7 @@ abs_mesh\mesh\mesh1.dat      ! Name of mesh file
 2 0. 0. 1. 0.000000 0.000000 -0.000000		! Moment force in z direction about a point
 0				! Number of lines of additional information 
 --- Load cases to be solved -------------------------------------------------------------------------------------------------------
-19 0.200000 2.000000       ! Number of wave frequencies, Min, and Max (rad/s)
+286 0.150000 3.000000       ! Number of wave frequencies, Min, and Max (rad/s)
 1 0.000000 0.000000		! Number of wave directions, Min and Max (degrees)
 --- Post processing ---------------------------------------------------------------------------------------------------------------
 1	0.1	10.		! IRF 				! IRF calculation (0 for no calculation), time step and duration
