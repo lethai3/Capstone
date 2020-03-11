@@ -1,0 +1,52 @@
+
+WEC-Sim Read Input File ...   
+Elapsed time is 0.140658 seconds.
+
+WEC-Sim Pre-processing ...   
+Elapsed time is 0.558336 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 250
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 10
+	Total Number of Time Steps           = 25000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, H (m)                   = 2
+	Wave Period, T (sec)                 = 6
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: mesh1 *****
+	Body CG                          (m) = [0,0,0]
+	Body Mass                       (kg) = 500 
+	Body Diagonal MOI              (kgm2)= [83.3333,83.3333,83.3333]
+
+List of PTO(s): No PTO in the system
+
+List of Constraint(s): Number of Constraints = 4 
+
+	***** Constraint Name: Fixed *****
+
+	***** Constraint Name: Constraint *****
+
+	***** Constraint Name: Constraint *****
+
+	***** Constraint Name: Constraint *****
+
+
+Simulating the WEC device defined in the SimMechanics model RM3_Hydraulic_PTO_HeavingSurging4.slx...   
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m', 265)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m',265,0)">line 265</a>)
+['RM3_Hydraulic_PTO_HeavingSurging4/Global Reference Frame/Solver Configuration']: Error evaluating equations at time 0.0.
+Stopping simulation.  There may be a singularity in the solution.  If not, try reducing the step size (either by reducing
+the fixed step size or by tightening the error tolerances)
+Caused by:
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m', 265)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m',265,0)">line 265</a>)
+    ['RM3_Hydraulic_PTO_HeavingSurging4/Translational/CONSTRAINT (Prismatic Joint)']:
+    'RM3_Hydraulic_PTO_HeavingSurging4/Translational/CONSTRAINT (Prismatic Joint)' has a degenerate mass distribution on its
+    follower side.
+} 
+matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m', 265)
+matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\remil\Desktop\WEC-Sim\source\wecSim.m', 265)
