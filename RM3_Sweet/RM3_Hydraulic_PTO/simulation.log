@@ -1,20 +1,20 @@
 
 WEC-Sim Read Input File ...   
-Elapsed time is 0.350511 seconds.
+Elapsed time is 0.844430 seconds.
 
 WEC-Sim Pre-processing ...   
-Elapsed time is 6.510334 seconds.
+Elapsed time is 0.686982 seconds.
 
 WEC-Sim Simulation Settings:
 	Start Time                     (sec) = 0
 	End Time                       (sec) = 200
-	Time Step Size                 (sec) = 0.0025
+	Time Step Size                 (sec) = 0.01
 	Ramp Function Time             (sec) = 50
-	Total Number of Time Steps           = 80000 
+	Total Number of Time Steps           = 20000 
 
 Wave Environment: 
 	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
-	Wave Height, H (m)                   = 0.5
+	Wave Height, H (m)                   = 2
 	Wave Period, T (sec)                 = 6
 
 List of Body: Number of Bodies = 1 
@@ -47,4 +47,26 @@ Found algebraic loop containing:
 <a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_5_2_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_5_2_1</a>
 <a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_8_1_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_8_1_1</a>
 <a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_8_2_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_8_2_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim 
+<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_11_1_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_11_1_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/STATE_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/STATE_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/OUTPUT_1_0','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/OUTPUT_1_0</a>
+<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Cylinder 4/Hydraulic cylinder and valves/Relay','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Cylinder 4/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
+<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Cylinder 3/Hydraulic cylinder and valves/Relay','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Cylinder 3/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
+<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Cylinder 2/Hydraulic cylinder and valves/Relay','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Cylinder 2/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
+<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Cylinder 1/Hydraulic cylinder and valves/Relay','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Cylinder 1/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
+[Warning: Discontinuities detected within algebraic loop(s), may have trouble solving] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)
+Simulink cannot solve the algebraic loop containing '<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4
+Cylinders Case 3 extra1/Solver Configuration</a>' at time 0.0 using the TrustRegion-based algorithm due to
+one of the following reasons: the model is ill-defined i.e., the system equations do not have a
+solution; or the nonlinear equation solver failed to converge due to numerical issues.
+ To rule out solver convergence as the cause of this error, follow either of the suggested actions. If
+ the error persists in spite of the following changes, then the model is likely ill-defined and
+ requires modification.
+Suggested Actions:
+    •  Switch to LineSearch-based algorithm using
+ set_param('<a href="matlab:open_system ('RM3_Hydraulic_PTO')">RM3_Hydraulic_PTO</a>','AlgebraicLoopSolver','LineSearch') - <a href="matlab:set_param('RM3_Hydraulic_PTO','AlgebraicLoopSolver','LineSearch');">Fix</a>
+    • Reduce the Fixed-step size of the solver. - <a href="matlab:load_system('RM3_Hydraulic_PTO');configset.highlightParameter('RM3_Hydraulic_PTO','FixedStep');">Open</a>
+} 
+wecSim

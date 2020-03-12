@@ -4,16 +4,17 @@ simu.simMechanicsFile = 'RM3_Hydraulic_PTO.slx';      %Location of Simulink Mode
 simu.startTime = 0;                     
 simu.rampTime = 50;                       
 simu.endTime=200;
+%simu.explorer='off';
 
-%simu.solver = 'ode4'; %default
+simu.solver = 'ode4'; %default
 %simu.solver = 'ode45'; %default
 %simu.solver = 'ODE15s';
 %simu.solver = 'ode23t';
-simu.solver = 'ode14x';
+%simu.solver = 'ode14x';
 
-%simu.dt = 0.01;  
+simu.dt = 0.01;  
 %simu.dt = 0.001;  
-simu.dt = 0.01/4; %worked with PTO-Sim - Crankshaft DA Cylinder Try 2 - WORKS!
+%simu.dt = 0.01/4; %worked with PTO-Sim - Crankshaft DA Cylinder Try 2 - WORKS!
 %simu.dt = 0.01/8; 
 
 %% Wave Information
@@ -28,7 +29,11 @@ waves.T = 6;
 
 %% Body Data
 % Float
-body(1) = bodyClass('../hydroData/buoy.h5');             
+
+%body(1) = bodyClass('../hydroData/buoy.h5'); 
+body(1) = bodyClass('../hydroData/hydroData.h5'); 
+
+
 body(1).geometryFile = '../geometry/buoy.stl';      
 body(1).mass = 500;
 body(1).momOfInertia = 2*500/12*[1 1 1];
