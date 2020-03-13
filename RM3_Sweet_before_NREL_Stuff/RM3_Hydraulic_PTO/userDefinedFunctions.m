@@ -53,7 +53,7 @@ Velo=output_Power.signals.values(:,3);
 
 result.Pavg_PTO=mean(P_PTO); % [W]
 result.Pmax_PTO=max(P_PTO); % [W]
-result.Fmax_PTO=max(F_PTO); % [N]
+result.Fmax_PTO=max(abs(F_PTO) ); % [N]
 result.Qavg_brin=60*mean(Q_brin); %  [Lmin-1]
 result.Qavg_feed=60*mean(Q_feed); % [Lmin-1]
 result.Qavg_perm=60*mean(Q_perm); % [Lmin-1]
@@ -61,6 +61,16 @@ result.Xavg_brin=nanmean(X_brin); %[ppm]
 result.Xavg_feed=mean(X_feed); %[ppm]
 result.Xavg_perm=Xavg_perm; % [ppm]
 result.Xmax_perm=max(X_perm); %[ppm]
+
+results_Water_tab(1,1)=result.Qavg_feed; 
+results_Water_tab(1,2)=result.Qavg_perm; 
+results_Water_tab(1,3)=result.Xavg_perm; 
+results_Water_tab(1,4)=result.Qavg_brin; 
+results_Water_tab(1,5)=result.Xavg_brin;
+
+results_Pow_tab(1,1)=result.Pavg_PTO; 
+results_Pow_tab(1,2)=result.Pmax_PTO; 
+results_Pow_tab(1,3)=result.Fmax_PTO;
 
 %% Plots
 
