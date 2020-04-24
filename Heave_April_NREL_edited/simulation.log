@@ -1,0 +1,156 @@
+
+WEC-Sim Read Input File ...   
+Elapsed time is 0.529607 seconds.
+
+WEC-Sim Pre-processing ...   
+Elapsed time is 36.609649 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 200
+	Time Step Size                 (sec) = 0.00125
+	Ramp Function Time             (sec) = 50
+	Total Number of Time Steps           = 160000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, H (m)                   = 2
+	Wave Period, T (sec)                 = 7
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: mesh1 *****
+	Body CG                          (m) = [0,0,0]
+	Body Mass                       (kg) = 1000 
+	Body Diagonal MOI              (kgm2)= [166.667,166.667,166.667]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 0
+
+List of Constraint(s): No Constraint in the system
+
+
+Simulating the WEC device defined in the SimMechanics model Heave_NREL_solve_4cyl.slx...   
+[Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Ext Control Input','error')">Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO -
+NRELedit/Cylinder 1/Ext Control Input</a>' is not connected.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+[Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Comp Control Input','error')">Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO -
+NRELedit/Cylinder 1/Comp Control Input</a>' is not connected.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)
+['Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Solver Configuration
+NREL1']: Nonlinear solver to advance time one step failed to converge due to Linear Algebra error. Failed to
+solve using iteration matrix.
+Caused by:
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)
+    The model may not give enough information to make it possible to solve for values of some of its variables.
+    Specific advice is given below.
+
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Translational Velocity Source','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2'}, {'','','','','','','','B','A','A','A','A'}, true)">all components and nodal across variables involved</a>
+    Cannot solve for one or more variables:
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.Double_Acting_Hydraulic_Cylinder_Simple.B.p'</a>
+    (Pressure)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.Double_Acting_Hydraulic_Cylinder_Simple.force'</a>
+    (Actuator force from C to R)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.Double_Acting_Hydraulic_Cylinder_Simple.pressure_B'</a>
+    (Pressure at port B)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.Ideal_Force_Sensor.F'</a>
+    (F)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.Ideal_Force_Sensor.f'</a>
+    (Force)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Translational Velocity Source'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.Ideal_Translational_Velocity_Source.f'</a>
+    (Force)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.x2_Way_Directional_Valve_1.A.p'</a>
+    (Pressure)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.x2_Way_Directional_Valve_1.orifice.A.p'</a>
+    (Pressure)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.x2_Way_Directional_Valve_1.orifice.pressure_drop'</a>
+    (Pressure drop)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.x2_Way_Directional_Valve_2.A.p'</a>
+    (Pressure)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.x2_Way_Directional_Valve_2.orifice.A.p'</a>
+    (Pressure)
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2'}, {''})">'PTO_Sim_Crankshaft_DA_4_Cylinders_Case_3_extra1_2RO_NRELedit.Cylinder_1.Hydraulic_Cylinder_Directional_Valves.x2_Way_Directional_Valve_2.orifice.pressure_drop'</a>
+    (Pressure drop)
+
+
+    Equations of one or more components may be dependent or inconsistent. This can cause problems in transient
+    initialization. Here is the set of components involved:
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Translational Velocity Source','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Translational Velocity Source','Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Translational Velocity Source'}, {'','','','','','','C','R','C','R','C','R'}, true)">all components involved</a>
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves'}, {''})">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves'</a>
+
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1'}, {''})">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1'</a>
+    Equation location is:
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+orifices\orifice_variable.sscp' (no line number
+    info)
+
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2'}, {''})">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 2'</a>
+    Equation location is:
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+orifices\orifice_variable.sscp' (no line number
+    info)
+
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)'}, {''})">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)'</a>
+    Equation locations are:
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+cylinders\cylinder_da_simple.sscp' (no line
+    number info)
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+cylinders\cylinder_da_simple.sscp' (no line
+    number info)
+
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor'}, {''})">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/Ideal Force  Sensor'</a>
+    Equation locations are:
+    <a href="matlab:opentoline('C:\Program Files\MATLAB\R2019b\toolbox\physmod\simscape\library\m\+foundation\+mechanical\+sensors\force.ssc', 36)"> 'C:\Program
+    Files\MATLAB\R2019b\toolbox\physmod\simscape\library\m\+foundation\+mechanical\+sensors\force.ssc'</a> (line 36)
+    <a href="matlab:opentoline('C:\Program Files\MATLAB\R2019b\toolbox\physmod\simscape\library\m\+foundation\+mechanical\+sensors\force.ssc', 37)"> 'C:\Program
+    Files\MATLAB\R2019b\toolbox\physmod\simscape\library\m\+foundation\+mechanical\+sensors\force.ssc'</a> (line 37)
+
+    <a href="matlab:simscape.internal.highlightSLStudio({'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Ideal Translational Velocity Source'}, {''})">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/Ideal Translational Velocity Source'</a>
+    Equation locations are:
+    <a href="matlab:opentoline('C:\Program Files\MATLAB\R2019b\toolbox\physmod\simscape\library\m\+foundation\+mechanical\+sources\velocity.ssc', 36)"> 'C:\Program
+    Files\MATLAB\R2019b\toolbox\physmod\simscape\library\m\+foundation\+mechanical\+sources\velocity.ssc'</a> (line
+    36)
+    <a href="matlab:opentoline('C:\Program Files\MATLAB\R2019b\toolbox\physmod\simscape\library\m\+foundation\+mechanical\+sources\velocity.ssc', 37)"> 'C:\Program
+    Files\MATLAB\R2019b\toolbox\physmod\simscape\library\m\+foundation\+mechanical\+sources\velocity.ssc'</a> (line
+    37)
+    Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)
+    Here is the set of components with unconverged equations:
+
+    <a href="matlab:das_dv_hyperlink('DAS', 'mdl', 'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)')">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)'</a>
+    Equation location is:
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+cylinders\cylinder_da_simple.sscp'(no line number
+    info)
+
+    <a href="matlab:das_dv_hyperlink('DAS', 'mdl', 'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 3')">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 3'</a>
+    Equation location is:
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+orifices\orifice_variable.sscp'(no line number
+    info)
+
+    <a href="matlab:das_dv_hyperlink('DAS', 'mdl', 'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 4')">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 4'</a>
+    Equation location is:
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+orifices\orifice_variable.sscp'(no line number
+    info)
+
+    <a href="matlab:das_dv_hyperlink('DAS', 'mdl', 'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1')">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/2-Way Directional Valve 1'</a>
+    Equation location is:
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+orifices\orifice_variable.sscp'(no line number
+    info)
+
+    <a href="matlab:das_dv_hyperlink('DAS', 'mdl', 'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder 1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)')">'Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Cylinder
+    1/Hydraulic Cylinder & Directional Valves/Double-Acting Hydraulic Cylinder (Simple)'</a>
+    Equation location is:
+    'C:\Program Files\MATLAB\R2019b\toolbox\physmod\sh\sh\+sh\+cylinders\cylinder_da_simple.sscp'(no line number
+    info)
+} 
+wecSim

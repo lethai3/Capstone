@@ -6,11 +6,11 @@ simu.rampTime = 50;
 simu.endTime=200;
 %simu.explorer='off';
 
-simu.solver = 'ode4'; %default
+%simu.solver = 'ode4'; %default
 %simu.solver = 'ode45'; %default
 %simu.solver = 'ODE15s';
 %simu.solver = 'ode23t';
-%simu.solver = 'ode14x';
+simu.solver = 'ode14x';
 
 simu.dt = 0.01;  
 %simu.dt = 0.001;  

@@ -1,0 +1,55 @@
+wecSimMCR Case 1
+
+WEC-Sim Read Input File ...   
+Elapsed time is 0.079008 seconds.
+
+WEC-Sim Pre-processing ...   
+Elapsed time is 2.135238 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 500
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 10
+	Total Number of Time Steps           = 50000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, H (m)                   = 2
+	Wave Period, T (sec)                 = 7
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: mesh1 *****
+	Body CG                          (m) = [0,0,0]
+	Body Mass                       (kg) = 1000 
+	Body Diagonal MOI              (kgm2)= [83.3333,83.3333,83.3333]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 0
+
+List of Constraint(s): No Constraint in the system
+
+
+Simulating the WEC device defined in the SimMechanics model basis_modif.slx...   
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Flow Sensor Accumulator/Goto','error')">basis_modif/RO System SA/Flow Sensor Accumulator/Goto</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Flow Sensor Orifice 2/Goto','error')">basis_modif/RO System SA/Flow Sensor Orifice 2/Goto</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Flow Sensor Orifice 3/Goto','error')">basis_modif/RO System SA/Flow Sensor Orifice 3/Goto</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Flow Sensor Orifice 4/Goto','error')">basis_modif/RO System SA/Flow Sensor Orifice 4/Goto</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Goto','error')">basis_modif/RO System SA/Goto</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Goto1','error')">basis_modif/RO System SA/Goto1</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+[Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Constant','error')">basis_modif/RO System SA/Constant</a>' is not connected.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+Elapsed time is 21.776001 seconds.
+
+Post-processing and saving...   
+Elapsed time is 1.079980 seconds.

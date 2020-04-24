@@ -3,8 +3,8 @@ simu = simulationClass();
 simu.simMechanicsFile = 'RM3_Hydraulic_PTO.slx';      %Location of Simulink Model File with PTO-SIm
 simu.startTime = 0;                     
 simu.rampTime = 50;                       
-simu.endTime=200;
-%simu.endTime=2050;
+%simu.endTime=200;
+simu.endTime=2050;
 
 %simu.solver = 'ode4'; %default
 %simu.solver = 'ode45'; %default
@@ -12,7 +12,7 @@ simu.endTime=200;
 %simu.solver = 'ode23t';
 simu.solver = 'ode14x';
 
-%simu.CITime = 20;
+simu.CITime = 20;
 
 %simu.dt = 0.01;  
 %simu.dt = 0.001;  
@@ -21,10 +21,14 @@ simu.dt = 0.01/4; %worked with PTO-Sim - Crankshaft DA Cylinder Try 2 - WORKS!
 
 %% Wave Information
 % Irregular Waves using PM Spectrum
-waves = waveClass('regular');
-%waves = waveClass('irregular');
+
+%waves = waveClass('regular');
+waves = waveClass('irregular');
+ waves.spectrumType = 'BS';
+ waves.phaseSeed=1;
+ 
 waves.H = 0.5;
-waves.T = 6;
+waves.T = 10;
 %waves.T = 6;
 
 % waves.spectrumType = 'BS';
