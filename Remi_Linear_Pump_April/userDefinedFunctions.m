@@ -8,7 +8,8 @@ Aw=3.812*10^(-12); %[m^3/(Ns)]
 Bs=6.986*10^(-8); %[ms-1]
 Am=7.2; %m^2
 eps=6*10^4*1*10^(-8);
-Nt=size(output.ptos.time,1);
+%Nt=size(output.ptos.time,1);
+Nt=size(t,1);
 %Nt=size(output_RO.time,1);
 
 %% Water Production
@@ -17,6 +18,7 @@ Q_feed=output_RO.signals.values(:,3); %[m^3/s]
 Q_perm=output_RO.signals.values(:,4); %[m^3/s]
 Q_brin=output_RO.signals.values(:,9); %[m^3/s]
 
+%Everything is converted to L/s here*********************
 Q_feed=Q_feed*1000; %[L/s]
 Q_perm=Q_perm*1000; %[L/s]
 Q_brin=Q_brin*1000; % [L/s]
@@ -24,7 +26,7 @@ Q_brin=Q_brin*1000; % [L/s]
 %% Salinity
 
 % Salinity of the permeate (derived from the diffusion model)
-dP=output_RO.signals.values(:,2);
+dP=output_RO.signals.values(:,2); %[Pa]
 %dP=output.value(:,2);
 X_feed=35000; %[mg/L]
 X_perm_ini=X_feed./(dP*Aw/Bs+1); % [mg/L] % We need to modify the modify the expression X_perm (from the diffusion model)
@@ -48,9 +50,9 @@ X_brin=(X_feed.*Q_feed-X_perm.*Q_perm)./Q_brin; % [mg/L]
 
 %% Foundation Load [N]
 
-F_PTO=output_Power.signals.values(:,1);
-P_PTO=abs(output_Power.signals.values(:,2));
-Velo=output_Power.signals.values(:,3);
+F_PTO=output_Power.signals.values(:,1); %N
+P_PTO=abs(output_Power.signals.values(:,2)); %W
+Velo=output_Power.signals.values(:,3); %m/s
 
 %% Saving the relevant parameters into a structure
 

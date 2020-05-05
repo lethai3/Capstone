@@ -1,22 +1,23 @@
-wecSimMCR Case 1
 
 WEC-Sim Read Input File ...   
-Elapsed time is 0.079008 seconds.
+Elapsed time is 2.373731 seconds.
 
 WEC-Sim Pre-processing ...   
-Elapsed time is 2.135238 seconds.
+Elapsed time is 23.026902 seconds.
 
 WEC-Sim Simulation Settings:
 	Start Time                     (sec) = 0
-	End Time                       (sec) = 500
+	End Time                       (sec) = 2050
 	Time Step Size                 (sec) = 0.01
-	Ramp Function Time             (sec) = 10
-	Total Number of Time Steps           = 50000 
+	Ramp Function Time             (sec) = 50
+	Convolution Integral Interval  (sec) = 100
+	Total Number of Time Steps           = 205000 
 
 Wave Environment: 
-	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
-	Wave Height, H (m)                   = 2
-	Wave Period, T (sec)                 = 7
+	Wave Type                            = Irregular Waves (Predefined Random Phase)
+	Spectrum Type                        = Bretschneider 
+	Significant Wave Height, Hs      (m) = 2
+	Peak Wave Period, Tp           (sec) = 7
 
 List of Body: Number of Bodies = 1 
 
@@ -49,7 +50,7 @@ Simulating the WEC device defined in the SimMechanics model basis_modif.slx...
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
 [Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Constant','error')">basis_modif/RO System SA/Constant</a>' is not connected.] 
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
-Elapsed time is 21.776001 seconds.
+Elapsed time is 906.953845 seconds.
 
 Post-processing and saving...   
-Elapsed time is 1.079980 seconds.
+Elapsed time is 2.939244 seconds.

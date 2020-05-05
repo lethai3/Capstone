@@ -4,13 +4,24 @@
 Block_tackle_ratio=4;
 
 %% Hydraulic joints [SI]
-valve_radius=0.0075;%0.0075; %[m]
+%valve_radius=0.0075;%0.0075; %[m]
 piston_stroke=2;%0.1792; %[m] or 7 in 
 
 %top_piston_area=3.14*(0.01)^2;%3.14*(0.01)^2;%3.14*(0.02)^2;%0.00114; % [m^2]
 %bot_piston_area=top_piston_area/3;
 
-top_piston_area=0.00184368853769991;
+%NEW PISTON AREAS
+%top_piston_area=(1/8)*0.0037262385749178; %for 0.5m wave height and 7s wave
+%top_piston_area=(1/6)*0.0037262385749178; %for 0.5m wave height and 7s wave
+
+%top_piston_area=(1/4)*0.0037262385749178; %for 0.5m wave height and 7s wave
+%top_piston_area=(1/2)*0.0037262385749178; %for 1m wave height and 7s wave
+%top_piston_area=(3/4)*0.0037262385749178; %for 1.5m wave height and 7s wave
+top_piston_area=0.0037262385749178; %for 2m wave height and 7s wave
+
+%top_piston_area=2*0.0037262385749178; %for 2m wave height and 7s wave
+
+
 top_piston_area=Block_tackle_ratio * top_piston_area;
 bot_piston_area=top_piston_area;
 %bot_piston_area=0.00184368853769991;

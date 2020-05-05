@@ -3,18 +3,56 @@ simu = simulationClass();
 value_modif; % to load the parameters associated with MyDesignRO.slx
 simu.simMechanicsFile = 'basis_modif.slx';      %Location of Simulink Model File with PTO-SIm
 simu.startTime = 0;                     
-simu.rampTime =10;                       
-simu.endTime=500;
+simu.rampTime =50;                       
+simu.endTime=2050;
+%simu.endTime=200;
 simu.solver = 'ode4';
 simu.dt = sample_time;  
-simu.CITime=sample_time; 
+simu.CITime=100; 
 
 %% Wave Information
-%waves = waveClass('irregular');
-%waves.spectrumType='BS';
-waves = waveClass('regular');
+waves = waveClass('irregular');
+waves.spectrumType='BS';
+%waves = waveClass('regular');
+
+
+%Sea State 1
+%{
+waves.H = 0.5;
+waves.T = 6;
+%}
+
+%Sea State 2
+%{
+waves.H = 0.5;
+waves.T = 10;
+%}
+
+%Sea State 3
+%{
+waves.H = 1.0;
+waves.T = 6;
+%}
+
+%Sea State 4
+%{
+waves.H = 1.5;
+waves.T = 7;
+%}
+
+%Sea State 5
+%
 waves.H = 2;
 waves.T = 7;
+%}
+
+%Sea State 6
+%{
+waves.H = 3;
+waves.T = 7;
+%}
+
+waves.phaseSeed = 1;
 
 %% Body Data
 body(1) = bodyClass('C:\Users\ASUS\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\hydroData\buoyExt.h5');
