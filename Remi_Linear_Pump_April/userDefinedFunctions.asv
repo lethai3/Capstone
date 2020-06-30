@@ -26,14 +26,12 @@ Q_brin=Q_brin*1000; % [L/s]
 P_feed=output_RO.signals.values(:,5); %Feed pressure [Pa]
 
 %Period for 50s t0 250s for averaging over regular waves 
-
 period=100*50:100*250; %for regular waves
 %period=100*50:100*2050; %for irregular waves
-%period=100*500:100*700; %for irregular waves
 
 P_feed_avg=mean(P_feed(period,1))/6894.76; %[psi]
-Q_feed_avg=mean(Q_feed(period,1)*60 ); %[L/min]
-Q_perm_avg=mean(Q_perm(period,1)*60); %[L/min]
+Q_feed_avg=mean(Q_feed(period,1)); %[L/s]
+Q_perm_avg=mean(Q_perm(period,1)); %[L/s]
 
 
 
@@ -171,7 +169,7 @@ xlabel('Sqrt Feed Pressure [Pa]');
 ylabel('Flowrate [m^3/s]');
 
 Q_feed_use=Q_feed(period,1)./1000; %[m^3/s]
-P_feed_use=P_feed(period,1); %[Pa]
+P_feed(period,1)); %[Pa]
 %% Additional plots
 
 % figure()

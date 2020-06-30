@@ -39,13 +39,13 @@ waves.T = 6;
 %}
 
 %Sea State 4
-%
+%{
 waves.H = 1.5;
 waves.T = 7;
 %}
 
 %Sea State 5
-%{
+%
 waves.H = 2;
 waves.T = 7;
 %}

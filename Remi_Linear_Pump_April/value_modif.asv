@@ -16,8 +16,8 @@ piston_stroke=2;%0.1792; %[m] or 7 in
 
 %top_piston_area=(1/4)*0.0037262385749178; %for 0.5m wave height and 7s wave
 %top_piston_area=(1/2)*0.0037262385749178; %for 1m wave height and 7s wave
-top_piston_area=(3/4)*0.0037262385749178; %for 1.5m wave height and 7s wave
-%top_piston_area=0.0037262385749178; %for 2m wave height and 7s wave
+%top_piston_area=(3/4)*0.0037262385749178; %for 1.5m wave height and 7s wave
+top_piston_area=0.0037262385749178; %for 2m wave height and 7s wave
 
 %top_piston_area=2*0.0037262385749178; %for 2m wave height and 7s wave
 
@@ -32,7 +32,7 @@ Aw=3.812*10^(-12); %[m^3/(Ns)]
 Bs=6.986*10^(-8); %[ms-1]
 Am=7.4*2;%7.2; %m^2
 
-FR_coeff=0.8; %******************
+FR_coeff=0.4; %******************
 
 RO_Membrane_Resistance=1/((Aw)*(Am) ) ;
 Flow_Restrictor_Resistance=FR_coeff * RO_Membrane_Resistance;
