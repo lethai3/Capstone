@@ -1,0 +1,50 @@
+
+WEC-Sim Read Input File ...   
+Elapsed time is 0.360681 seconds.
+
+WEC-Sim Pre-processing ...   
+Elapsed time is 0.527981 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 200
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 50
+	Total Number of Time Steps           = 20000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, H (m)                   = 1.5
+	Wave Period, T (sec)                 = 9
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: mesh1 *****
+	Body CG                          (m) = [0,0,0]
+	Body Mass                       (kg) = 500 
+	Body Diagonal MOI              (kgm2)= [83.3333,83.3333,83.3333]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 1000
+	PTO Damping           (Ns/m;Nsm/rad) = 6800
+
+List of Constraint(s): No Constraint in the system
+
+
+Simulating the WEC device defined in the SimMechanics model Heave_Basic_PTO.slx...   
+[Warning: Input port 1 of '<a href="matlab:open_and_hilite_hyperlink ('Heave_Basic_PTO/Translational PTO Actuation Force','error')">Heave_Basic_PTO/Translational PTO Actuation Force</a>' is not connected.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+[Warning: Output port 1 of '<a href="matlab:open_and_hilite_hyperlink ('Heave_Basic_PTO/Translational PTO Actuation Force','error')">Heave_Basic_PTO/Translational PTO Actuation Force</a>' is not connected.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
+Elapsed time is 10.845433 seconds.
+
+Post-processing and saving...   
+[Warning: Ignoring extra legend entries.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend>process_inputs', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\scribe\legend.m', 594)" style="font-weight:bold">legend>process_inputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\scribe\legend.m',594,0)">line 594</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend>make_legend', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\scribe\legend.m', 335)" style="font-weight:bold">legend>make_legend</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\scribe\legend.m',335,0)">line 335</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\scribe\legend.m', 279)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\scribe\legend.m',279,0)">line 279</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('userDefinedFunctions', 'C:\Users\ASUS\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Heave_April_NREL_edited\userDefinedFunctions.m', 36)" style="font-weight:bold">userDefinedFunctions</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Heave_April_NREL_edited\userDefinedFunctions.m',36,0)">line 36</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 302)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',302,0)">line 302</a>)] 
+Elapsed time is 1.385002 seconds.
