@@ -1,9 +1,10 @@
+wecSimMCR Case 1
 
 WEC-Sim Read Input File ...   
-Elapsed time is 0.844430 seconds.
+Elapsed time is 0.788006 seconds.
 
 WEC-Sim Pre-processing ...   
-Elapsed time is 0.686982 seconds.
+Elapsed time is 0.619314 seconds.
 
 WEC-Sim Simulation Settings:
 	Start Time                     (sec) = 0
@@ -34,10 +35,10 @@ List of Constraint(s): No Constraint in the system
 
 
 Simulating the WEC device defined in the SimMechanics model RM3_Hydraulic_PTO.slx...   
-[Warning: Block diagram '<a href="matlab:open_system ('RM3_Hydraulic_PTO')">RM3_Hydraulic_PTO</a>' contains 1 algebraic loop(s). To see more details about the
-loops use the command <a href="matlab:Simulink.BlockDiagram.getAlgebraicLoops(bdroot);">Simulink.BlockDiagram.getAlgebraicLoops('RM3_Hydraulic_PTO') </a> or the command
-line Simulink debugger by typing <a href="matlab:sldebug(bdroot);">sldebug('RM3_Hydraulic_PTO') </a> in the MATLAB command window. To
-eliminate this message, set <a href="matlab:configset.internal.open('RM3_Hydraulic_PTO','AlgebraicLoopMsg');">Algebraic loop</a> to "none".] 
+[Warning: Block diagram '<a href="matlab:open_system ('RM3_Hydraulic_PTO')">RM3_Hydraulic_PTO</a>' contains 1 algebraic loop(s). To see more details about the loops use
+the command <a href="matlab:Simulink.BlockDiagram.getAlgebraicLoops(bdroot);">Simulink.BlockDiagram.getAlgebraicLoops('RM3_Hydraulic_PTO') </a> or the command line Simulink debugger
+by typing <a href="matlab:sldebug(bdroot);">sldebug('RM3_Hydraulic_PTO') </a> in the MATLAB command window. To eliminate this message, set <a href="matlab:configset.internal.open('RM3_Hydraulic_PTO','AlgebraicLoopMsg');">Algebraic
+loop</a> to "none".] 
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
 Found algebraic loop containing: 
 <a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_11_2_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration/EVAL_KEY/INPUT_11_2_1</a> (algebraic variable)
@@ -57,16 +58,21 @@ Found algebraic loop containing:
 [Warning: Discontinuities detected within algebraic loop(s), may have trouble solving] 
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)] 
 {Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m', 291)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\ASUS\Documents\GitHub\WEC-Sim\source\wecSim.m',291,0)">line 291</a>)
-Simulink cannot solve the algebraic loop containing '<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4
-Cylinders Case 3 extra1/Solver Configuration</a>' at time 0.0 using the TrustRegion-based algorithm due to
-one of the following reasons: the model is ill-defined i.e., the system equations do not have a
-solution; or the nonlinear equation solver failed to converge due to numerical issues.
- To rule out solver convergence as the cause of this error, follow either of the suggested actions. If
- the error persists in spite of the following changes, then the model is likely ill-defined and
- requires modification.
+Simulink cannot solve the algebraic loop containing '<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1/Solver Configuration','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case
+3 extra1/Solver Configuration</a>' at time 0.0 using the TrustRegion-based algorithm due to one of the following
+reasons: the model is ill-defined i.e., the system equations do not have a solution; or the nonlinear equation
+solver failed to converge due to numerical issues.
+ To rule out solver convergence as the cause of this error, follow either of the suggested actions. If the error
+ persists in spite of the following changes, then the model is likely ill-defined and requires modification.
 Suggested Actions:
     •  Switch to LineSearch-based algorithm using
  set_param('<a href="matlab:open_system ('RM3_Hydraulic_PTO')">RM3_Hydraulic_PTO</a>','AlgebraicLoopSolver','LineSearch') - <a href="matlab:set_param('RM3_Hydraulic_PTO','AlgebraicLoopSolver','LineSearch');">Fix</a>
     • Reduce the Fixed-step size of the solver. - <a href="matlab:load_system('RM3_Hydraulic_PTO');configset.highlightParameter('RM3_Hydraulic_PTO','FixedStep');">Open</a>
 } 
+wecSimInputFile
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: NOT DEFINED
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\ASUS\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\RM3_Sweet\RM3_Hydraulic_PTO 
 wecSim
