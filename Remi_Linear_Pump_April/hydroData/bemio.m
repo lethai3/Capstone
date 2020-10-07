@@ -1,7 +1,8 @@
 clc; clear all; close all;
 hydro = struct();
 
-hydro = Read_NEMOH(hydro,'C:\Users\ASUS\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Heave_April_NREL_edited\hydroData\');
+%hydro = Read_NEMOH(hydro,'C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\hydroData');
+hydro = Read_NEMOH(hydro,cd);
 % hydro = Read_WAMIT(hydro,'..\..\WAMIT\Cubes\cubes.out',[]);
 % hydro = Combine_BEM(hydro); % Compare WAMIT
 hydro = Radiation_IRF(hydro,100,[],[],[],[]);
