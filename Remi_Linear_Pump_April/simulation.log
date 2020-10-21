@@ -1,16 +1,16 @@
 
 WEC-Sim Read Input File ...   
-Elapsed time is 0.358088 seconds.
+Elapsed time is 0.873187 seconds.
 
 WEC-Sim Pre-processing ...   
-Elapsed time is 1.372077 seconds.
+Elapsed time is 0.569217 seconds.
 
 WEC-Sim Simulation Settings:
 	Start Time                     (sec) = 0
 	End Time                       (sec) = 250
-	Time Step Size                 (sec) = 0.005
+	Time Step Size                 (sec) = 0.01
 	Ramp Function Time             (sec) = 50
-	Total Number of Time Steps           = 50000 
+	Total Number of Time Steps           = 25000 
 
 Wave Environment: 
 	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
@@ -33,20 +33,22 @@ List of PTO(s): Number of PTOs = 1
 List of Constraint(s): No Constraint in the system
 
 
-Simulating the WEC device defined in the SimMechanics model Heave_NREL_solve_4cyl.slx...   
-[Warning: Unconnected output line found on '<a href="matlab:open_and_hilite_hyperlink ('Heave_NREL_solve_4cyl/Translational  PTO Actuation  Force - NREL','error')">Heave_NREL_solve_4cyl/Translational  PTO Actuation  Force - NREL</a>'
-(output port: 1)] 
+Simulating the WEC device defined in the SimMechanics model basis_modif.slx...   
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Flow Sensor Accumulator/Goto','error')">basis_modif/RO System SA/Flow Sensor Accumulator/Goto</a>' not found] 
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
-[Warning: Unconnected input line found on '<a href="matlab:open_and_hilite_hyperlink ('Heave_NREL_solve_4cyl/Translational  PTO Actuation  Force - NREL','error')">Heave_NREL_solve_4cyl/Translational  PTO Actuation  Force - NREL</a>'
-(input port: 1)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Flow Sensor Orifice 2/Goto','error')">basis_modif/RO System SA/Flow Sensor Orifice 2/Goto</a>' not found] 
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
-[Warning: Unconnected output line found on '<a href="matlab:open_and_hilite_hyperlink ('Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra1 - 2RO - NRELedit/Hydraulic Cylinder & Directional Valves','error')">Heave_NREL_solve_4cyl/PTO-Sim - Crankshaft DA 4 Cylinders Case 3
-extra1 - 2RO - NRELedit/Hydraulic Cylinder & Directional Valves</a>' (output port: 1)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Flow Sensor Orifice 3/Goto','error')">basis_modif/RO System SA/Flow Sensor Orifice 3/Goto</a>' not found] 
 [> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
-Elapsed time is 172.956510 seconds.
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Flow Sensor Orifice 4/Goto','error')">basis_modif/RO System SA/Flow Sensor Orifice 4/Goto</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Goto','error')">basis_modif/RO System SA/Goto</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
+[Warning: Matching "From" for "Goto" '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Goto1','error')">basis_modif/RO System SA/Goto1</a>' not found] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
+[Warning: '<a href="matlab:slprivate('open_and_hilite_port_hyperlink', 'hilite', ['basis_modif/RO System SA/Constant'], 'Outport', 1);">Output Port 1</a>' of '<a href="matlab:open_and_hilite_hyperlink ('basis_modif/RO System SA/Constant','error')">basis_modif/RO System SA/Constant</a>' is not connected.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
+Elapsed time is 39.932315 seconds.
 
 Post-processing and saving...   
-[Warning: Imaginary parts of complex X and/or Y arguments ignored.] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('userDefinedFunctions', 'C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\userDefinedFunctions.m', 169)" style="font-weight:bold">userDefinedFunctions</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\userDefinedFunctions.m',169,0)">line 169</a>)
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 303)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',303,0)">line 303</a>)] 
-Elapsed time is 12.648799 seconds.
+Elapsed time is 3.708928 seconds.

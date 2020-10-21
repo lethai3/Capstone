@@ -8,11 +8,47 @@ g=9.81;
 rho=1024; %[kg/m^3] water density
 P_atmos=101325; %[Pa]
 depth=5;
+%solver='ode45';
+%solver='ode15s';
 
 %accumulator_volume=3.78*2.5;%[L]
-accumulator_volume=3.78*2.5;%[L] 3.78 liters per gallon
+accumulator_volume=3.78*2.5/1.01;%[L] 3.78 liters per gallon
 minimum_gas_volume=0.08;%[L]
 precharge_pressure=30e5; %[Pa]
+
+
+%Below not typed into slx yet
+cyl_ExtA_1=0.00114; %[m^2]
+cyl_CompB_1=0.00114/3; %[m^2]
+%
+%Below not typed into slx yet
+cyl_ExtA_2=0.00114; %[m^2]
+cyl_CompB_2=0.00114/3; %[m^2]
+
+cyl_ExtA_3=0.00114; %[m^2]
+cyl_CompB_3=0.00114/3; %[m^2]
+
+cyl_ExtA_4=0.00114; %[m^2]
+cyl_CompB_4=0.00114/3; %[m^2]
+%}
+
+%%%% RO membrane 
+Aw=3.812*10^(-12); %[m^3/(Ns)]
+Bs=6.986*10^(-8); %[ms-1]
+Am=7.4*2;%7.2; %[m^2] the multiplication by 2 means there are two RO membranes
+
+FR_coeff=0.8; %******************
+
+RO_Membrane_Resistance=1/((Aw)*(Am) ) ;
+Flow_Restrictor_Resistance=FR_coeff * RO_Membrane_Resistance;
+
+%1000 psi = 6894757.29 Pa -> ~69e5
+%800 psi = 55.16e5 Pa
+%435 psi = 30e5 Pa
+
+%Pressure relief valve
+cracking_pressure=10*3e4;
+maximum_opening_pressure=10*12e4;
 
 %% Crankshaft Pump [SI]
 
@@ -56,26 +92,10 @@ bot_piston_area=top_piston_area;
 
 %% Hydraulic system 
 
-%%%% RO membrane 
-Aw=3.812*10^(-12); %[m^3/(Ns)]
-Bs=6.986*10^(-8); %[ms-1]
-Am=7.4*2;%7.2; %[m^2] the multiplication by 2 means there are two RO membranes
-
-FR_coeff=0.8; %******************
-
-RO_Membrane_Resistance=1/((Aw)*(Am) ) ;
-Flow_Restrictor_Resistance=FR_coeff * RO_Membrane_Resistance;
 
 
 
 
-%1000 psi = 6894757.29 Pa -> ~69e5
-%800 psi = 55.16e5 Pa
-%435 psi = 30e5 Pa
-
-%Pressure relief valve
-cracking_pressure=10*3e4;
-maximum_opening_pressure=10*12e4;
 
 % %%% Flow restrictor
 % coeff_flow_rest=0.5;%0.5;

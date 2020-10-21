@@ -2,11 +2,11 @@
 simu = simulationClass();
 
 %Loading the predefined PTO system design values & Simulink file
-%Lin_pump_design_Param; % to load the parameters associated with MyDesignRO.slx
-%simu.simMechanicsFile = 'basis_modif.slx';      %Location of Simulink Model File with PTO-SIm
+Lin_pump_design_Param; % to load the parameters associated with MyDesignRO.slx
+simu.simMechanicsFile = 'basis_modif.slx';      %Location of Simulink Model File with PTO-SIm
 
-Four_cyl_design_Param;
-simu.simMechanicsFile = 'Heave_NREL_solve_4cyl.slx';
+%Four_cyl_design_Param;
+%simu.simMechanicsFile = 'Heave_NREL_solve_4cyl.slx';
 
 simu.startTime = 0;                     
 simu.rampTime =50;                       

@@ -1,5 +1,11 @@
 %% Parametric values for the Simulink file
 
+%% Misc
+sample_time=0.01;
+g=9.81;
+rho=1024;
+P_atmos=101325; %[Pa]
+depth=5;
 
 % For the linear cylinder single acting pump 
 Block_tackle_ratio=4;
@@ -25,6 +31,7 @@ top_piston_area=(3/4)*0.0037262385749178; %for 1.5m wave height and 7s wave
 
 top_piston_area=Block_tackle_ratio * top_piston_area;
 bot_piston_area=top_piston_area;
+
 %bot_piston_area=0.00184368853769991;
 %dis_cap_A1=2.826*2.56*0.01; % initial distance double acting piston [m]
 
@@ -33,17 +40,12 @@ Aw=3.812*10^(-12); %[m^3/(Ns)]
 Bs=6.986*10^(-8); %[ms-1]
 Am=7.4*2;%7.2; %m^2
 
-FR_coeff=0.8; %******************
+FR_coeff=0.6; %******************
 
 RO_Membrane_Resistance=1/((Aw)*(Am) ) ;
 Flow_Restrictor_Resistance=FR_coeff * RO_Membrane_Resistance;
 
-%% Misc
-sample_time=0.01;
-g=9.81;
-rho=1024;
-P_atmos=101325; %[Pa]
-depth=5;
+
 %accumulator_volume=3.78*2.5;%[L]
 accumulator_volume=3.78*2.5;%[L] 3.78 liters per gallon
 minimum_gas_volume=0.08;%[L]
