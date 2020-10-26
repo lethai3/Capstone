@@ -1,13 +1,13 @@
 --- Environment ------------------------------------------------------------------------------------------------------------------ 
 1025.000000				! RHO 			! KG/M**3 	! Fluid specific volume 
 9.810000				! G			! M/S**2	! Gravity 
-5.000000                 ! DEPTH			! M		! Water depth
+6.000000                 ! DEPTH			! M		! Water depth
 0.	0.              ! XEFF YEFF		! M		! Wave measurement point
 --- Description of floating bodies -----------------------------------------------------------------------------------------------
 1				! Number of bodies
 --- Body 1 -----------------------------------------------------------------------------------------------------------------------
 abs_mesh\mesh\mesh1.dat      ! Name of mesh file
-896 256			! Number of points and number of panels 	
+1024 320			! Number of points and number of panels 	
 6				! Number of degrees of freedom
 1 1. 0.	0. 0. 0. 0.		! Surge
 1 0. 1.	0. 0. 0. 0.		! Sway

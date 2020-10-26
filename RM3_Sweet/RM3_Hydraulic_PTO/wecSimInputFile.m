@@ -12,7 +12,7 @@ simu.endTime=200;
 %simu.solver = 'ode23t';
 simu.solver = 'ode14x';
 
-simu.dt = 0.01;  
+simu.dt = 0.01/4;  
 %simu.dt = 0.001;  
 %simu.dt = 0.01/4; %worked with PTO-Sim - Crankshaft DA Cylinder Try 2 - WORKS!
 %simu.dt = 0.01/8; 

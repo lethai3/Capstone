@@ -113,7 +113,7 @@ Init_dist_Cap_4=0.25; %[in] %initial distance from cap
 
 
 
-%% Crankshaft Pump [SI]
+%% Linear Pump older values from Remi [SI]
 
 %{
 %valve_radius=0.0075;%0.0075; %[m]

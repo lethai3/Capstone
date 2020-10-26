@@ -18,6 +18,9 @@ Q_feed=output_RO.signals.values(:,3); %[m^3/s]
 Q_perm=output_RO.signals.values(:,4); %[m^3/s]
 Q_brin=output_RO.signals.values(:,9); %[m^3/s]
 
+Recov_Ratio=Q_perm./Q_feed;
+Recov_Avg=mean(Recov_Ratio);
+
 %Everything is converted to L/s here*********************
 Q_feed=Q_feed*1000; %[L/s]
 Q_perm=Q_perm*1000; %[L/s]
@@ -79,7 +82,8 @@ result.Favg_PTO=mean(abs(F_PTO) ); % [N]
 result.Qavg_brin=60*mean(Q_brin); %  [Lmin-1]
 result.Qavg_feed=60*mean(Q_feed); % [Lmin-1]
 result.Qavg_perm=60*mean(Q_perm); % [Lmin-1]
-result.Xavg_brin=nanmean(X_brin); %[ppm]
+%result.Xavg_brin=nanmean(X_brin); %[ppm]
+result.Xavg_brin=mean(X_brin); %[ppm]
 result.Xavg_feed=mean(X_feed); %[ppm]
 result.Xavg_perm=Xavg_perm; % [ppm]
 result.Xmax_perm=max(X_perm); %[ppm]
@@ -102,6 +106,9 @@ results_Pow_tab(1,4)=result.Favg_PTO;
 
 figure();
 plot(t,P_PTO/10^3,'k',t,mean(P_PTO)/10^3*ones(1,Nt),'--r',t,max(P_PTO)/10^3*ones(1,Nt),'--m')
+% plot(P_PTO/10^3,'k'); hold on;
+% plot(mean(P_PTO)/10^3*ones(1,Nt),'--r'); hold on;
+% plot(max(P_PTO)/10^3*ones(1,Nt),'--m'); hold on;
 set(findall(gcf,'type','axes'),'fontsize',16);
 legend('Absorbed Power',['Avg Absorbed Power : ',num2str(mean(P_PTO)/10^3,4),' kW'],['Max Absorbed Power : ',num2str(max(P_PTO)/10^3,4),' kW'],'Location','northwest')
 xlabel('Time [s]')
@@ -111,6 +118,9 @@ grid on
 
 figure();
 plot(t,F_PTO,'k',t,mean(F_PTO)*ones(1,Nt),'--r',t,max(F_PTO)*ones(1,Nt),'--m')
+% plot(F_PTO,'k'); hold on;
+% plot(mean(F_PTO)*ones(1,Nt),'--r'); hold on;
+% plot(max(F_PTO)*ones(1,Nt),'--m'); hold on;
 set(findall(gcf,'type','axes'),'fontsize',16);
 legend('Total PTO Force',['Avg Tot PTO Force : ',num2str(mean(F_PTO),4),' N'],...
     ['Max Tot abs PTO Force : ',num2str(max(abs(F_PTO)),4),' N'],'Location','best')
@@ -141,8 +151,10 @@ grid on
 
 figure()
 subplot(4,1,1)
-plot(t,waves.waveAmpTime(:,2),'Color',[0.3010, 0.7450, 0.9330])
+%plot(t,waves.waveAmpTime(:,2),'Color',[0.3010, 0.7450, 0.9330])
+plot(waves.waveAmpTime(:,2),'Color',[0.3010, 0.7450, 0.9330])
 xlabel('Time [s]')
+xlim([0 size(waves.waveAmpTime(:,2),1)]);
 ylabel('Wave elevation [m]')
 subplot(4,1,2)
 plot(t,60*Q_brin,'k',t,60*Q_feed,'--r',t,60*Q_perm,'b')
@@ -172,6 +184,9 @@ ylabel('Flowrate [m^3/s]');
 
 Q_feed_use=Q_feed(period,1)./1000; %[m^3/s]
 P_feed_use=P_feed(period,1); %[Pa]
+
+integral_avg=trapz(t,Q_perm*60)/max(t)
+figure; plot(t)
 %% Additional plots
 
 % figure()

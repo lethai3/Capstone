@@ -2,25 +2,30 @@
 simu = simulationClass();
 
 %Loading the predefined PTO system design values & Simulink file
-Lin_pump_design_Param; % to load the parameters associated with MyDesignRO.slx
-simu.simMechanicsFile = 'basis_modif.slx';      %Location of Simulink Model File with PTO-SIm
+%Lin_pump_design_Param; % to load the parameters associated with MyDesignRO.slx
+%simu.simMechanicsFile = 'basis_modif.slx';      %Location of Simulink Model File with PTO-SIm
 
-%Four_cyl_design_Param;
+Four_cyl_design_Param;
 %simu.simMechanicsFile = 'Heave_NREL_solve_4cyl.slx';
+simu.simMechanicsFile = 'RM3_Hydraulic_PTO';
+
+%simu.simMechanicsFile = 'Heave_NREL_solve_4cyl_old.slx';
 
 simu.startTime = 0;                     
 simu.rampTime =50;                       
-%simu.endTime=2050;
-simu.endTime=250;
-simu.solver = 'ode4';
+simu.endTime=2050;
+%simu.endTime=200;
+%simu.solver = 'ode4';
+%simu.solver = 'ode14x';
+%simu.solver = 'ode45';
 simu.dt = sample_time;  
 simu.CITime=100; 
 
 %% Wave Information
 
-%waves = waveClass('irregular');
-%waves.spectrumType='BS';
-waves = waveClass('regular');
+waves = waveClass('irregular');
+waves.spectrumType='BS';
+%waves = waveClass('regular');
 
 %Sea State 1
 %{
@@ -41,7 +46,7 @@ waves.T = 6;
 %}
 
 %Sea State 4
-%
+%{
 waves.H = 1.5;
 waves.T = 7;
 %}
@@ -53,7 +58,7 @@ waves.T = 7;
 %}
 
 %Sea State 6
-%{
+%
 waves.H = 3;
 waves.T = 7;
 %}
@@ -61,11 +66,16 @@ waves.T = 7;
 waves.phaseSeed = 1;
 
 %% Body Data
-body(1) = bodyClass('C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\hydroData\buoyExtended_new.h5');
+
+%body(1) = bodyClass('hydroData\buoy_cube_6m.h5');
+body(1) = bodyClass('hydroData\buoyExt_cube_6m.h5'); %works the same as the other one
+%body(1) = bodyClass('hydroData\buoyExtended_new.h5');
+%body(1) = bodyClass('hydroData\buoy_cube_6m.h5');
+%body(1) = bodyClass('C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\hydroData\buoyExtended_new.h5');
 body(1).geometryFile = ('C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\geometry\buoy.stl');
 %body(1) = bodyClass('../hydroData/hydroData.h5'); 
 %body(1).geometryFile = ('../geometry/buoyExt.stl');      
-body(1).mass = 1000;
+body(1).mass = 1000; %500for cube | 1000 for ext cube
 body(1).momOfInertia = body(1).mass/12*[1 1 1];
 
 %% PTO and Constraint Parameters

@@ -1,7 +1,7 @@
 %% Parametric values for the Simulink file
 
 %% Misc
-sample_time=0.01;
+sample_time=0.01/4;
 g=9.81;
 rho=1024;
 P_atmos=101325; %[Pa]

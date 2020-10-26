@@ -3,23 +3,34 @@
 %For the Crankshaft rotary pump
 
 %% Misc
-sample_time=0.01/2;
+
+%For the new NREL solver block or Heave_NREL_solve_4cyl.slx
+%sample_time=0.01/8;
+%simu.solver = 'ode4';
+
+%For the old solver block or RM3_Hydraulic_PTO.slx
+sample_time=0.01/4;
+simu.solver = 'ode14x';
+%simu.solver = 'ode15s';
+
 g=9.81;
 rho=1024; %[kg/m^3] water density
 P_atmos=101325; %[Pa]
-depth=5;
+depth=6;
 %solver='ode45';
 %solver='ode15s';
 
 %accumulator_volume=3.78*2.5;%[L]
-accumulator_volume=3.78*2.5/1.01;%[L] 3.78 liters per gallon
+accumulator_volume=3.78*2.5/1.01/10;%[L] 3.78 liters per gallon
 minimum_gas_volume=0.08;%[L]
 precharge_pressure=30e5; %[Pa]
+init_accum_volume=accumulator_volume; %Could usually set to 0
 
 
+%********FOR RM3 file you have to change in xls
 %Below not typed into slx yet
 cyl_ExtA_1=0.00114; %[m^2]
-cyl_CompB_1=0.00114/3; %[m^2]
+cyl_CompB_1=0.00114; %[m^2]
 %
 %Below not typed into slx yet
 cyl_ExtA_2=0.00114; %[m^2]
@@ -35,9 +46,9 @@ cyl_CompB_4=0.00114/3; %[m^2]
 %%%% RO membrane 
 Aw=3.812*10^(-12); %[m^3/(Ns)]
 Bs=6.986*10^(-8); %[ms-1]
-Am=7.4*2;%7.2; %[m^2] the multiplication by 2 means there are two RO membranes
+Am=7.4;%7.2; %[m^2] the multiplication by 2 means there are two RO membranes
 
-FR_coeff=0.8; %******************
+FR_coeff=0.6; %******************
 
 RO_Membrane_Resistance=1/((Aw)*(Am) ) ;
 Flow_Restrictor_Resistance=FR_coeff * RO_Membrane_Resistance;
@@ -49,6 +60,17 @@ Flow_Restrictor_Resistance=FR_coeff * RO_Membrane_Resistance;
 %Pressure relief valve
 cracking_pressure=10*3e4;
 maximum_opening_pressure=10*12e4;
+
+%% Rotary pump
+
+
+%---------------------------------------
+%Spring
+%---------------------------------------
+Spring_const=-200; %[N/m] We may shrink this but this was used for DESIGN stage
+Zero_Spr_F=4; %[m] the depth at which there would be zero spring force
+              %The spring is preloaded with tension, but if the absorber
+              %was at Zero_Spr_F depth, there wouldn't be any tension
 
 %% Crankshaft Pump [SI]
 
