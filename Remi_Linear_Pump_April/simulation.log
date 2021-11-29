@@ -1,9 +1,9 @@
 
 WEC-Sim Read Input File ...   
-Elapsed time is 0.272139 seconds.
+Elapsed time is 0.093626 seconds.
 
 WEC-Sim Pre-processing ...   
-Elapsed time is 0.814250 seconds.
+Elapsed time is 0.236983 seconds.
 
 WEC-Sim Simulation Settings:
 	Start Time                     (sec) = 0
@@ -14,15 +14,15 @@ WEC-Sim Simulation Settings:
 
 Wave Environment: 
 	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
-	Wave Height, H (m)                   = 3
+	Wave Height, H (m)                   = 1.5
 	Wave Period, T (sec)                 = 7
 
 List of Body: Number of Bodies = 1 
 
 	***** Body Number 1, Name: mesh1 *****
 	Body CG                          (m) = [0,0,0]
-	Body Mass                       (kg) = 500 
-	Body Diagonal MOI              (kgm2)= [41.6667,41.6667,41.6667]
+	Body Mass                       (kg) = 1000 
+	Body Diagonal MOI              (kgm2)= [83.3333,83.3333,83.3333]
 
 List of PTO(s): Number of PTOs = 1 
 
@@ -33,38 +33,38 @@ List of PTO(s): Number of PTOs = 1
 List of Constraint(s): No Constraint in the system
 
 
-Simulating the WEC device defined in the SimMechanics model RM3_Hydraulic_PTO...   
-[Warning: Block diagram '<a href="matlab:open_system ('RM3_Hydraulic_PTO')">RM3_Hydraulic_PTO</a>' contains 1 algebraic loop(s). To see more details about the
-loops use the command <a href="matlab:Simulink.BlockDiagram.getAlgebraicLoops(bdroot);">Simulink.BlockDiagram.getAlgebraicLoops('RM3_Hydraulic_PTO') </a> or the command line
-Simulink debugger by typing <a href="matlab:sldebug(bdroot);">sldebug('RM3_Hydraulic_PTO') </a> in the MATLAB command window. To eliminate this
-message, set <a href="matlab:configset.internal.open('RM3_Hydraulic_PTO','AlgebraicLoopMsg');">Algebraic loop</a> to "none".] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
+Simulating the WEC device defined in the SimMechanics model ADAPT_SDCAL_PID_NoAccum_1_29_2021.slx...   
+[Warning: Block diagram '<a href="matlab:open_system ('ADAPT_SDCAL_PID_NoAccum_1_29_2021')">ADAPT_SDCAL_PID_NoAccum_1_29_2021</a>' contains 1 algebraic loop(s). To see more details about the
+loops use the command <a href="matlab:Simulink.BlockDiagram.getAlgebraicLoops(bdroot);">Simulink.BlockDiagram.getAlgebraicLoops('ADAPT_SDCAL_PID_NoAccum_1_29_2021') </a> or the command line
+Simulink debugger by typing <a href="matlab:sldebug(bdroot);">sldebug('ADAPT_SDCAL_PID_NoAccum_1_29_2021') </a> in the MATLAB command window. To eliminate
+this message, set <a href="matlab:configset.internal.open('ADAPT_SDCAL_PID_NoAccum_1_29_2021','AlgebraicLoopMsg');">Algebraic loop</a> to "none".] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 312)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',312,0)">line 312</a>)] 
 Found algebraic loop containing: 
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_11_2_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_11_2_1</a> (algebraic variable)
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_2_1_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_2_1_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_2_2_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_2_2_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_5_1_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_5_1_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_5_2_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_5_2_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_8_1_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_8_1_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_8_2_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_8_2_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_11_1_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/INPUT_11_1_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/STATE_1','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/STATE_1</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/OUTPUT_1_0','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Solver Configuration/EVAL_KEY/OUTPUT_1_0</a>
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Cylinder 4/Hydraulic cylinder and valves/Relay','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Cylinder 4/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Cylinder 3/Hydraulic cylinder and valves/Relay','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Cylinder 3/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Cylinder 2/Hydraulic cylinder and valves/Relay','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Cylinder 2/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
-<a href="matlab:open_and_hilite_hyperlink ('RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Cylinder 1/Hydraulic cylinder and valves/Relay','error')">RM3_Hydraulic_PTO/PTO-Sim - Crankshaft DA 4 Cylinders Case 3 extra2 - 1 RO membrane1/Cylinder 1/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_12_2_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_12_2_1</a> (algebraic variable)
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_3_1_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_3_1_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_3_2_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_3_2_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_6_1_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_6_1_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_6_2_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_6_2_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_9_1_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_9_1_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_9_2_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_9_2_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_12_1_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/INPUT_12_1_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/STATE_1','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/STATE_1</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/OUTPUT_1_0','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/Solver Configuration/EVAL_KEY/OUTPUT_1_0</a>
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/4 cylinders and valves/Cylinder 4/Hydraulic cylinder and valves/Relay','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/4 cylinders and valves/Cylinder 4/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/4 cylinders and valves/Cylinder 3/Hydraulic cylinder and valves/Relay','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/4 cylinders and valves/Cylinder 3/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/4 cylinders and valves/Cylinder 2/Hydraulic cylinder and valves/Relay','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/4 cylinders and valves/Cylinder 2/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
+<a href="matlab:open_and_hilite_hyperlink ('ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/4 cylinders and valves/Cylinder 1/Hydraulic cylinder and valves/Relay','error')">ADAPT_SDCAL_PID_NoAccum_1_29_2021/PTO-Sim - Crankshaft DA 4 Cylinders - 1 RO membrane/4 cylinders and valves/Cylinder 1/Hydraulic cylinder and valves/Relay</a> (algebraic variable) (discontinuity)
 [Warning: Discontinuities detected within algebraic loop(s), may have trouble solving] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 292)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',292,0)">line 292</a>)] 
-Elapsed time is 1395.422595 seconds.
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 312)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',312,0)">line 312</a>)] 
+Elapsed time is 429.201474 seconds.
 
 Post-processing and saving...   
 [Warning: Imaginary parts of complex X and/or Y arguments ignored.] 
-[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('userDefinedFunctions', 'C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\userDefinedFunctions.m', 181)" style="font-weight:bold">userDefinedFunctions</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\userDefinedFunctions.m',181,0)">line 181</a>)
-In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 303)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',303,0)">line 303</a>)] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('userDefinedFunctions', 'C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\userDefinedFunctions.m', 279)" style="font-weight:bold">userDefinedFunctions</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April\userDefinedFunctions.m',279,0)">line 279</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 323)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',323,0)">line 323</a>)] 
 
-integral_avg =
+ans =
 
-    2.5241
+  244.2168
 
-Elapsed time is 2.491019 seconds.
+Elapsed time is 1.907439 seconds.

@@ -1,0 +1,15 @@
+
+WEC-Sim Read Input File ...   
+{'wecSimInputFile' is not found in the current folder or on the MATLAB path, but exists in:
+    C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Remi_Linear_Pump_April
+    C:\Users\mkell\Documents\GitHub\WEC-Sim_Applications\Desalination
+    C:\Users\mkell\Documents\GitHub\Harvesting-Wave-Energy-Capstone-Project\Heave_April_NREL_edited
+    C:\Users\mkell\Documents\GitHub\WEC-Sim_Applications\Free_Decay\1m-ME
+    C:\Users\mkell\Documents\GitHub\WEC-Sim\tutorials\OSWEC
+
+Change the MATLAB current folder or add its folder to the MATLAB path.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m', 49)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\mkell\Documents\GitHub\WEC-Sim\source\wecSim.m',49,0)">line 49</a>)
+evalc('wecSimInputFile');
+} 
+wecSim

@@ -20,27 +20,44 @@ depth=6;
 %solver='ode45';
 %solver='ode15s';
 
-%accumulator_volume=3.78*2.5;%[L]
-accumulator_volume=3.78*2.5/1.01/10;%[L] 3.78 liters per gallon
+%accumulator_volume=3.78*2.5;%[L] 3.78 liters per gallon
+%accumulator_volume=(3.78/1.01)*2.5;%[L] 2.5 gal (320 fl oz) 
+%accumulator_volume=(3.78/1.01)*2*0.5195313;%[L] 2*0.5195 gal (2 of the 66.5 fl oz accums) 
+%accumulator_volume=(3.78/1.01)*0.5195313;%[L] 0.5195 gal (66.5 fl oz) - not work SS5
+%accumulator_volume=(3.78/1.01)*0.2617188;%[L] 0.2617 gal (33.5 fl oz) 
+accumulator_volume=(3.78/1.01)*0.1289063;%[L] 0.1289 gal (16.5 fl oz)  - not work SS5
+
 minimum_gas_volume=0.08;%[L]
 precharge_pressure=30e5; %[Pa]
-init_accum_volume=accumulator_volume; %Could usually set to 0
+init_accum_volume=0*accumulator_volume; %Could usually set to 0
 
 
 %********FOR RM3 file you have to change in xls
 %Below not typed into slx yet
-cyl_ExtA_1=0.00114; %[m^2]
-cyl_CompB_1=0.00114; %[m^2]
-%
+cyl_CompA_1=0.00114; %[m^2] The larger area usually (usually larger)
+cyl_ExtB_1=0.00114/2; %[m^2]
+Stroke_1=7; %[in] cylinder stroke length
+Init_dist_Cap_1=2.826; %[in] %initial distance from cap 
+%Computed to match the crankshaft angular offset for all cylinders
+
+%Cylinder 2
 %Below not typed into slx yet
-cyl_ExtA_2=0.00114; %[m^2]
-cyl_CompB_2=0.00114/3; %[m^2]
+cyl_CompA_2=0.00114; %[m^2] Cylinder Area extension side (usually larger)
+cyl_ExtB_2=0.00114/2; %[m^2] Cylinder Area compression side
+Stroke_2=7; %[in] cylinder stroke length
+Init_dist_Cap_2=6.5; %[in] %initial distance from cap 
 
-cyl_ExtA_3=0.00114; %[m^2]
-cyl_CompB_3=0.00114/3; %[m^2]
+%Cylinder 3
+cyl_CompA_3=0.00114; %[m^2] Cylinder Area extension side  (usually larger)
+cyl_ExtB_3=0.00114/2; %[m^2] Cylinder Area compression side
+Stroke_3=7; %[in] cylinder stroke length
+Init_dist_Cap_3=2.826; %[in] %initial distance from cap 
 
-cyl_ExtA_4=0.00114; %[m^2]
-cyl_CompB_4=0.00114/3; %[m^2]
+%Cylinder 4
+cyl_CompA_4=0.00114; %[m^2] Cylinder Area extension side (usually larger)
+cyl_ExtB_4=0.00114/2; %[m^2] Cylinder Area compression side
+Stroke_4=7; %[in] cylinder stroke length
+Init_dist_Cap_4=0.25; %[in] %initial distance from cap
 %}
 
 %%%% RO membrane 
@@ -48,10 +65,15 @@ Aw=3.812*10^(-12); %[m^3/(Ns)]
 Bs=6.986*10^(-8); %[ms-1]
 Am=7.4;%7.2; %[m^2] the multiplication by 2 means there are two RO membranes
 
+%FR_coeff=0.45; %******************
 FR_coeff=0.6; %******************
+%FR_coeff=0.9; %******************
 
-RO_Membrane_Resistance=1/((Aw)*(Am) ) ;
-Flow_Restrictor_Resistance=FR_coeff * RO_Membrane_Resistance;
+C_Valve_Set=FR_coeff;
+
+RO_Membrane_Resistance=1/((Aw)*(Am) ) ; 
+%Flow_Restrictor_Resistance=FR_coeff * RO_Membrane_Resistance;
+Flow_Restrictor_Resistance=C_Valve_Set * RO_Membrane_Resistance;
 
 %1000 psi = 6894757.29 Pa -> ~69e5
 %800 psi = 55.16e5 Pa
@@ -67,7 +89,7 @@ maximum_opening_pressure=10*12e4;
 %---------------------------------------
 %Spring
 %---------------------------------------
-Spring_const=-200; %[N/m] We may shrink this but this was used for DESIGN stage
+Spring_const=-50; %[N/m] We may shrink this but this was used for DESIGN stage
 Zero_Spr_F=4; %[m] the depth at which there would be zero spring force
               %The spring is preloaded with tension, but if the absorber
               %was at Zero_Spr_F depth, there wouldn't be any tension
