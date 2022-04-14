@@ -1,6 +1,0 @@
-%Saving the summary stats from the regular wave modeling
-
-
-save(['2cyl_Bore_1.96in_T',num2str(waves.T),'s_H',num2str(waves.H),'m.mat'],'result','results_Pow_tab',...
-    'results_Water_tab','Am','Aw','Bs','cyl_CompA_1','cyl_CompA_3','FR_coeff',...
-    'waves.type','waves.H','waves.T','waves.waterDepth');

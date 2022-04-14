@@ -9,9 +9,14 @@
 %simu.solver = 'ode4';
 
 %For the old solver block or RM3_Hydraulic_PTO.slx
-sample_time=0.01/4;
-simu.solver = 'ode14x';
-%simu.solver = 'ode15s';
+
+%With no Accumulator
+%sample_time=0.01/4;
+%simu.solver = 'ode14x';
+
+%With accumulator
+sample_time=0.01/8;
+simu.solver = 'ode15s';
 
 g=9.81;
 rho=1024; %[kg/m^3] water density
@@ -29,17 +34,18 @@ accumulator_volume=(3.78/1.01)*0.1289063;%[L] 0.1289 gal (16.5 fl oz)  - not wor
 
 minimum_gas_volume=0.08;%[L]
 precharge_pressure=30e5; %[Pa]
-init_accum_volume=0*accumulator_volume; %Could usually set to 0
+%init_accum_volume=0*accumulator_volume; %[L]Could usually set to 0
+init_accum_volume=0.5*accumulator_volume; %[L]Could usually set to 0
 
 
 %********FOR RM3 file you have to change in xls
 %Below not typed into slx yet
 %-------1.5inch diameter bore-------------
-%cyl_CompA_1=0.00114; %[m^2] Cylinder Area extension side  (usually larger)
-%cyl_ExtB_1=0.00114/2; %[m^2] Cylinder Area compression side
+cyl_CompA_1=0.00114; %[m^2] Cylinder Area extension side  (usually larger)
+cyl_ExtB_1=0.00114/2; %[m^2] Cylinder Area compression side
 %-------1.96inch diameter bore (50mm)-------------
-cyl_CompA_1=0.001946567; %[m^2] Cylinder Area extension side  (usually larger)
-cyl_ExtB_1=0.001946567/2; %[m^2] Cylinder Area compression side
+% cyl_CompA_1=0.001946567; %[m^2] Cylinder Area extension side  (usually larger)
+% cyl_ExtB_1=0.001946567/2; %[m^2] Cylinder Area compression side
 %-----------------------------------------------------
 Stroke_1=7; %[in] cylinder stroke length
 Init_dist_Cap_1=2.826; %[in] %initial distance from cap 
@@ -54,11 +60,11 @@ Init_dist_Cap_1=2.826; %[in] %initial distance from cap
 
 %Cylinder 3
 %-------1.5inch diameter bore-------------
-%cyl_CompA_3=0.00114; %[m^2] Cylinder Area extension side  (usually larger)
-%cyl_ExtB_3=0.00114/2; %[m^2] Cylinder Area compression side
+cyl_CompA_3=0.00114; %[m^2] Cylinder Area extension side  (usually larger)
+cyl_ExtB_3=0.00114/2; %[m^2] Cylinder Area compression side
 %-------1.96inch diameter bore (50mm)-------------
-cyl_CompA_3=0.001946567; %[m^2] Cylinder Area extension side  (usually larger)
-cyl_ExtB_3=0.001946567/2; %[m^2] Cylinder Area compression side
+% cyl_CompA_3=0.001946567; %[m^2] Cylinder Area extension side  (usually larger)
+% cyl_ExtB_3=0.001946567/2; %[m^2] Cylinder Area compression side
 %-----------------------------------------------------
 Stroke_3=7; %[in] cylinder stroke length
 Init_dist_Cap_3=2.826; %[in] %initial distance from cap 
@@ -86,7 +92,7 @@ Am=7.4;%7.2; %[m^2] the multiplication by 2 means there are two RO membranes
 % Am=1.20774;%7.2; %[m^2] the multiplication by 2 means there are two RO membranes
 
 %FR_coeff=0.45; %******************
-FR_coeff=0.3; %******************
+FR_coeff=0.6; %******************
 %FR_coeff=0.9; %******************
 
 C_Valve_Set=FR_coeff;
